@@ -1,4 +1,4 @@
-package tests;
+package model;
 
 import model.DiaryEntry;
 import org.junit.jupiter.api.BeforeEach;

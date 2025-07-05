@@ -13,9 +13,9 @@ public class Main {
         boolean running = true;
         while (running) {
         	System.out.println("""
-        	        
-        	        📖 Welcome to Your Digital Diary! 📖
-        	        ────────────────────────────────
+        	    ──────────────────────────────────────────
+        	         Welcome to Your Digital Diary! 📖
+        	    ──────────────────────────────────────────
         	        1 -  Add a new entry
         	        2️ -  View all entries
         	        3️ -  Update an existing entry
@@ -66,12 +66,12 @@ public class Main {
                     ReflectionUtility.ReflectionCommand();
                     break;
                 case "0":
-                    System.out.println("👋 Goodbye!");
+                    System.out.println("👋 Thanks for using Digital Diary! See you next time!");
                     scanner.close();
                     running = false;
                     break;
                 default:
-                    System.out.println("❌ Invalid option.");
+                    System.out.println("⚠️ Oops! That option isn’t valid. Please try again..");
                     break;
             }
 

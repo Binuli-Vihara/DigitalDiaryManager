@@ -49,7 +49,7 @@ public class DiaryEntry {
         this.mood = mood;
     }
 
-    // Custom string output
+    
     @Override
     public String toString() {
         return """
