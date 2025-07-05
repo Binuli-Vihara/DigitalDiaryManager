@@ -12,18 +12,23 @@ public class Main {
 
         boolean running = true;
         while (running) {
-            System.out.println("\n📖 Digital Diary");
-            System.out.println("1. Add Entry");
-            System.out.println("2. View Entries");
-            System.out.println("3. Update Entry");
-            System.out.println("4. Delete Entry");
-            System.out.println("5. Search by Mood");
-            System.out.println("6. Sort by Date");
-            System.out.println("7. Mood Statistics");
-            System.out.println("8. Word Count");
-            System.out.println("9. Reflection");
-            System.out.println("0. Exit");
-            System.out.print("📥 Enter your choice (0–9) and press Enter: ");
+        	System.out.println("""
+        	        
+        	        📖 Welcome to Your Digital Diary! 📖
+        	        ────────────────────────────────
+        	        1 -  Add a new entry
+        	        2️ -  View all entries
+        	        3️ -  Update an existing entry
+        	        4️ -  Delete an entry
+        	        5️ -  Search entries by mood
+        	        6️ -  Sort entries by date
+        	        7️ -  View mood statistics
+        	        8️ -  Show word count for entries
+        	        9️ -  Inspect Diary Manager class (Reflection)
+        	        0️ -  Exit the diary
+        	        
+        	        📥 Please enter your choice (0–9) and press Enter:
+        	        """);
 
             String input = scanner.nextLine();
             Command command = null;
@@ -58,7 +63,7 @@ public class Main {
                     manager.showWordCounts();
                     break;
                 case "9":
-                    ReflectionUtil.inspectDiaryEntryClass();
+                    ReflectionUtility.inspectDiaryEntry();
                     break;
                 case "0":
                     System.out.println("👋 Goodbye!");
